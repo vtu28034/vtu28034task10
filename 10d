@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt
+
+# Define the data
+sizes = [35, 25, 25, 15]
+mylabels = ['w', 'x', 'y', 'z']
+myexplode = [0.2, 0, 0, 0]  # Highlight the first slice
+
+# Plot the pie chart
+plt.pie(sizes, labels=mylabels, explode=myexplode, shadow=True, autopct='%1.1f%%')  # automatic percentage formatting
+plt.title('Pie Chart')
+plt.show()
